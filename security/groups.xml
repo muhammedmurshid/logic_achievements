@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data noupdate="0">
+        <record model="ir.module.category" id="module_logic_achievement_groups">
+            <field name="name">Logic Achievement</field>
+            <field name="sequence">20</field>
+            <field name="visible" eval="0"/>
+        </record>
+        <record id="module_logic_achievement_directors" model="res.groups">
+            <field name="name">Directors</field>
+            <field name="category_id" ref="module_logic_achievement_groups"/>
+        </record>
+    </data>
+</odoo>
