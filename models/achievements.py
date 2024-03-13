@@ -7,6 +7,7 @@ class LogicAchievements(models.Model):
     _name = 'logic.achievements'
     _inherit = ['mail.thread', 'mail.activity.mixin']
     _description = 'Achievements'
+    _order = 'id desc'
 
     name = fields.Char('Name')
     department_id = fields.Many2one('hr.department', 'Department')
